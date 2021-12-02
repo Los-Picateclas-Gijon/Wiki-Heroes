@@ -33,9 +33,11 @@
 
       <template v-slot:extension>
         <v-tabs align-with-title>
-          <v-tab>Tab 1</v-tab>
-          <v-tab>Tab 2</v-tab>
-          <v-tab>Tab 3</v-tab>
+          <v-tab>Home</v-tab>
+          <v-tab>Héroes</v-tab>
+          <v-tab>Neutros</v-tab>
+          <v-tab>Villanos</v-tab>
+          <v-tab>Favoritos</v-tab>
         </v-tabs>
       </template>
     </v-app-bar>
