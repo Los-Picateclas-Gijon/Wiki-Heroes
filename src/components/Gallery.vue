@@ -6,7 +6,7 @@
           <v-card rounded="xl" height="100" width="100">
             <v-img></v-img>
           </v-card>
-          <v-card-subtitle>caca</v-card-subtitle>
+          <v-card-subtitle></v-card-subtitle>
         </v-col>
       </v-row>
     </v-container>

@@ -1,5 +1,5 @@
 <template>
-  <v-footer id="footer" v-bind="localAttrs" height="60px" color="#1B1B1B">
+  <v-footer id="footer" height="60px" color="#1B1B1B">
     <v-row align="center" justify="center">
       <v-card-text align="center">
         <v-btn v-for="icon in icons" :key="icon" icon color="#FFFFFF">

@@ -4,7 +4,7 @@
 
 <script>
 import Gallery from "../components/Gallery.vue";
-import ApiRepository from "../api/infrastructure/ApiRepository";
+//import ApiRepository from "../api/infrastructure/ApiRepository";
 export default {
   name: "Home",
   components: {
@@ -14,11 +14,11 @@ export default {
     heroesList: [],
   }),
   methods: {},
-  created: async function () {
-    const url = "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api";
-    const api = await new ApiRepository(url);
-    this.heroesList = await api.getAllData();
-    console.log(this.heroesList);
+  created: async () => {
+    const url = "https://akabab.github.io/superhero-api/api/all.json";
+    let response = await fetch(url);
+    let data = await response.json();
+    console.log(data[0]);
   },
 };
 </script>
