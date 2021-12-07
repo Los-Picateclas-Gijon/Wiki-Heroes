@@ -11,13 +11,40 @@ const routes = [
     component: Home,
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/heroes",
+    name: "Heroes",
     // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
+    // this generates a separate chunk (heroes.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+      import(/* webpackChunkName: "Heroes" */ "../views/Heroes.vue"),
+  },
+  {
+    path: "/villanos",
+    name: "Villains",
+    // route level code-splitting
+    // this generates a separate chunk (villanos.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "Villains" */ "../views/Villains.vue"),
+  },
+  {
+    path: "/neutros",
+    name: "Neutrals",
+    // route level code-splitting
+    // this generates a separate chunk (neutros.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "Neutrals" */ "../views/Neutrals.vue"),
+  },
+  {
+    path: "/favoritos",
+    name: "Favourites",
+    // route level code-splitting
+    // this generates a separate chunk (favoritos.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "Favourites" */ "../views/Favourites.vue"),
   },
 ];
 
