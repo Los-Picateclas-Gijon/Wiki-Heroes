@@ -14,9 +14,6 @@
       <template v-slot:extension>
         <v-tabs align-with-title show-arrows>
           <v-tab to="/">Home</v-tab>
-          <v-tab to="/heroes">Héroes</v-tab>
-          <v-tab to="/villanos">Villanos</v-tab>
-          <v-tab to="/neutros">Neutros</v-tab>
           <v-tab to="/favouritos">Favoritos</v-tab>
         </v-tabs>
       </template>

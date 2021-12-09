@@ -1,12 +1,11 @@
 <template>
   <v-main>
-    <v-container>
+    <v-container fluid>
       <v-row>
-        <v-col align="center" v-for="n in 9" :key="n" cols="4">
-          <v-card rounded="xl" height="100" width="100">
-            <v-img></v-img>
-          </v-card>
-          <v-card-subtitle></v-card-subtitle>
+        <v-col v-for="card in cards" :key="card.name" cols="4">
+          <v-card :card="cards"></v-card>
+          <v-img :src="card.images.lg"> </v-img>
+          <v-card-title v-text="card.name"></v-card-title>
         </v-col>
       </v-row>
     </v-container>
@@ -16,10 +15,18 @@
 <script>
 export default {
   name: "Gallery",
-  props: {
-    heroesList: Array,
+  data() {
+    return {
+      cards: [],
+    };
+  },
+  created: async function () {
+    const url = "https://akabab.github.io/superhero-api/api/all.json";
+    let response = await fetch(url);
+    let data = await response.json();
+    this.cards = data;
+    console.log(this.cards);
   },
 };
 </script>
-
 <style scoped></style>
