@@ -1,11 +1,12 @@
 <template>
   <v-main>
-    <v-container fluid>
+    <v-container fluid class="one">
       <v-row>
-        <v-col v-for="card in cards" :key="card.name" cols="4">
-          <v-card :card="cards"></v-card>
-          <v-img :src="card.images.lg"> </v-img>
-          <v-card-title v-text="card.name"></v-card-title>
+        <v-col v-for="card in cards" :key="card.name" cols="4" class="center">
+          <v-card :card="cards" class="border">
+            <v-img :src="card.images.lg" rounded="xl" class="image"></v-img>
+          </v-card>
+          <v-card-subtitle v-text="card.name"></v-card-subtitle>
         </v-col>
       </v-row>
     </v-container>
@@ -29,4 +30,16 @@ export default {
   },
 };
 </script>
-<style scoped></style>
+<style scoped>
+.one {
+  display: flex;
+}
+.border {
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+</style>
