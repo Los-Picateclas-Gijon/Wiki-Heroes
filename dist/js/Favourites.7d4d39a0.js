@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["Favourites"],{"0e0d":function(e,n,t){"use strict";t.r(n);var o=function(){var e=this,n=e.$createElement,t=e._self._c||n;return t("div")},s=[],u={name:"Favourites",components:{}},a=u,r=t("2877"),c=Object(r["a"])(a,o,s,!1,null,null,null);n["default"]=c.exports}}]);
+//# sourceMappingURL=Favourites.7d4d39a0.js.map
